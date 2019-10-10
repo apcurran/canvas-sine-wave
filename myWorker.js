@@ -1,6 +1,7 @@
 "use strict";
 
 onmessage = function(event) {
+    console.log("Worker running...")
     
     const canvas = event.data.canvas;
     const ctx = canvas.getContext("2d");
@@ -44,6 +45,4 @@ onmessage = function(event) {
     
         increment += wave.frequency;
     })();
-
-
 }
